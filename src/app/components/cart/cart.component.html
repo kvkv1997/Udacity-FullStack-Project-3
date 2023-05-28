@@ -15,7 +15,7 @@
             <input placeholder="Minimun is 6 characters" type="text" name="address" required minlength="6"
                 class="input-text" [(ngModel)]="address" />
             <label for="card">Credit card</label>
-            <input placeholder="Minimun is 16 characters" class="input-text" type="text" name="card" required
+            <input placeholder="Minimun is 16 characters" class="input-text" type="number" name="card" required
                 minlength="16" [(ngModel)]="creditCard" />
             <span class="text-annouce">We will never share you payment details with anyone else</span>
             <button [disabled]="form.invalid" type="submit" [ngClass]="form.invalid ? '' : 'button-add-cart'">
